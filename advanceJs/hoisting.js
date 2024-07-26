@@ -1,7 +1,10 @@
+console.log(x);
+console.log(getName);
 var x = 7;
-function sayName() {
+getName();
+function getName() {
   console.log("asibul alam");
 }
-sayName();
-console.log(x);
-console.log(sayName);
+// var getName = () => {
+//   console.log("asibul alam");
+// };
