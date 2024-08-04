@@ -1,8 +1,13 @@
-function x() {
-  var a = 7;
-  function y() {
-    console.log(a);
+function z() {
+  var b = 900;
+  function x() {
+    var a = 7;
+    function y() {
+      console.log(a, b);
+    }
+    y();
   }
-  y();
+  x();
 }
-x();
+
+z();
