@@ -1,4 +1,5 @@
-const numbers = [11, 3, 45, 7, 2, 7, 2, 7, 2];
-const greaterThanTwo = numbers.filter((value) => value > 2);
-console.log(greaterThanTwo);
-console.log(numbers);
+const numbers = [1, 2, 3, 4, 4, 5, 76, 87, 8, 23];
+const greaterThan10 = numbers.filter((currentValue, currentIndex, array) => {
+  return currentValue > 10;
+});
+console.log(greaterThan10);

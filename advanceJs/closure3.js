@@ -1,10 +1,25 @@
-var num2 = 120;
-var sum = function () {
+// function bankAccount(initialBalance) {
+//   var balance = initialBalance;
+//   return function () {
+//     return balance;
+//   };
+// }
+// var account = bankAccount(1000);
+// console.log(account());
+// account.balance = 40000;
+(function () {
   var num1 = 3;
-  return function () {
-    return num1 + num2;
+  var num2 = 10;
+  var sum = function () {
+    return function () {
+      return num1 + num2;
+    };
   };
-};
-const c = sum();
-console.dir(c);
-console.log("we are going to learn about closure here in toady video!!!");
+  var myFunction = sum();
+  console.dir(myFunction);
+  console.dir(myFunction());
+  num1 = 10;
+  num2 = 20;
+  console.dir(myFunction);
+  console.dir(myFunction());
+})();
