@@ -1,11 +1,13 @@
-function temporary() {
-  let counter = 9;
-  return function () {
-    return counter + 1;
-  };
+function stopWatch() {
+  var startTime = Date.now();
+  function getDelay() {
+    console.log(Date.now() - startTime);
+  }
+  return getDelay;
 }
-
-const x = temporary();
-// console.log(x);
-const ans = x();
-console.log(ans);
+var timer = stopWatch();
+// create a fake delay
+for (var i = 1; i < 100000000; i++) {
+  var a = Math.random() * 1000000;
+}
+console.dir(timer);

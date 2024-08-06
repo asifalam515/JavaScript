@@ -1,6 +1,7 @@
-const numbers = [11, 3, 45, 7, 2, 7, 2, 7, 2];
-const result = numbers.map((value, index, array) => {
-  return value * 2;
+const number1 = [23, 5, 51, 3, 5, 6, 7];
+const element = number1.map((element) => {
+  return element * 2;
 });
-console.log(result);
-console.log(numbers); //actual array didn't change
+console.log(element);
+
+console.log(number1);
